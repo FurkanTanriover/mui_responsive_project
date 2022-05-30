@@ -2,9 +2,11 @@ import { Home, ModeNight, Person, Settings, Store } from '@mui/icons-material'
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = (props:{mode:any,setMode:any}) => {
   return (
-    <Box sx={{backgroundColor:"white"}} flex={1} p={2}>
+      console.log(props.mode),
+    <Box sx={{display:{xs:"none",sm:"block"}}} flex={1} p={2}>
+        <Box sx={{position:"fixed",width:"5%"}} mb={3} >
         <List>
         <ListItem disablePadding>
             <ListItemButton component="a" href='#simple-list'>
@@ -43,11 +45,13 @@ const Sidebar = () => {
                 <ListItemIcon>
                     <ModeNight/>
                 </ListItemIcon>
-                <Switch defaultChecked />
+                <Switch defaultChecked onChange={
+                    e=>props.setMode(props.mode==="light"?"dark":"light")} />
 
             </ListItemButton>
         </ListItem>
       </List>
+        </Box>
     </Box>
     
   )
