@@ -55,7 +55,7 @@ const Add = () => {
                </Stack>
                <ButtonGroup fullWidth
                variant='contained'
-               aria-aria-label='outlined primary button group'
+               aria-label='outlined primary button group'
                >
                    <Button >Post</Button>
                    <Button sx={{width:"20%"}}><DateRange/></Button>

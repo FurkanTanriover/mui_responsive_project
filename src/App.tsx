@@ -1,8 +1,6 @@
-import { createTheme, PaletteMode, Stack, ThemeOptions, ThemeProvider } from '@mui/material';
+import { createTheme, PaletteMode, Stack, ThemeProvider } from '@mui/material';
 import { Box } from '@mui/system';
-import { Mode } from 'fs';
 import { useState } from 'react';
-import { text } from 'stream/consumers';
 import './App.css';
 import Add from './components/Add';
 import Feed from './components/Feed';
@@ -18,7 +16,7 @@ function App() {
     }
   })
 
-  function MySideBar(setMode:any,mode:any){
+  const MySideBar=({mode,setMode}:any)=>{
     return <Sidebar mode={mode} setMode={setMode}/>;
   }
 

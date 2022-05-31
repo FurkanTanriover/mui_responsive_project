@@ -19,7 +19,7 @@ const Rightbar = () => {
       <Typography variant='h6' fontWeight={100} mt={2} mb={2}>Latest Photos</Typography>
         <LatestPost/>
       <Typography variant='h6' fontWeight={100} mt={2}>Latest Conservations</Typography>
-      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'black' }}>
+      <List sx={{ width: '100%', maxWidth: 360,  }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />

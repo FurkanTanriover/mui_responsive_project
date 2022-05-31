@@ -35,7 +35,7 @@ const Navbar = () => {
       <StyledToolbar>
          <Typography variant='h6' sx={{display:{xs:"none", sm:"block"}}}>Lettuce Dev</Typography>
       <Fitbit sx={{display:{xs:"block",sm:"none"}}}/>
-      <Search><InputBase placeholder='search...'></InputBase></Search>
+      <Search sx={{bgcolor:"background.default"}}><InputBase placeholder='search...'></InputBase></Search>
       <Icons>
       <Badge badgeContent={2} color="error">
   <Mail/>
