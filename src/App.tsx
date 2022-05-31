@@ -16,6 +16,9 @@ function App() {
     }
   })
 
+  
+  
+
   const MySideBar=({mode,setMode}:any)=>{
     return <Sidebar mode={mode} setMode={setMode}/>;
   }
